@@ -25,8 +25,7 @@ export default {
 
 <style lang="scss" scoped>
   .v-footer {
-    background-color: cornsilk;
-    opacity: 0.5;
+    background-color: rgba(255,248,220,0.5);
     width: 100%;
     height: 40px;
     display: flex;
