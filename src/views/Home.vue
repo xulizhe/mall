@@ -1,17 +1,20 @@
 <template>
   <div class="home">
     <v-header class="header"></v-header>
+    <slider></slider>
     content
   </div>
 </template>
 
 <script>
 import VHeader from '@/components/VHeader'
+import Slider from '@/components/Slider'
 
 export default {
   name: 'home',
   components: {
-    VHeader
+    VHeader,
+    Slider
   },
   data () {
     return {
