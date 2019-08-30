@@ -1,9 +1,9 @@
 <template>
 <div class="nav">
-  <div class="item" v-for="(item,index) in images" :key="index">
+  <a target="_blank" href="http://www.baidu.com" class="item" v-for="(item,index) in images" :key="index">
     <img class="img" :src="item.link">
     <span class="title">{{item.title}}</span>
-  </div>
+  </a>
 </div>
 </template>
 

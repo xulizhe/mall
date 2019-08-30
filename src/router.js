@@ -25,6 +25,11 @@ export default new Router({
       path: '/personal',
       name: 'personal',
       component: () => import('./views/Personal.vue')
+    },
+    {
+      path: '/navDetail',
+      name: 'navDetail',
+      component: () => import('./views/NavDetail.vue')
     }
   ]
 })
