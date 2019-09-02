@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .v-header {
-  background-color: rgba(255,0,0,0.6);;
+  background-color: rgba(255,0,0,0.6);
   height: 40px;
   width: 100%;
 }
