@@ -55,7 +55,7 @@ export default {
   padding-bottom: 40px;
   box-sizing: border-box;
   .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
   }

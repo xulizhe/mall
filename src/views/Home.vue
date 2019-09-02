@@ -43,11 +43,13 @@ export default {
     box-sizing: border-box;
     padding-top: 40px;
     .header {
-      position: absolute;
+      position: fixed;
+      z-index: 1000;
       top: 0;
       left: 0;
     }
     .content {
+      -webkit-overflow-scrolling: touch;
       height: 100%;
       overflow: auto;
     }
