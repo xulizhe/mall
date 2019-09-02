@@ -17,7 +17,7 @@ export const getHomeSlider = () => {
     return [
       {
         linkUrl: 'https://www.imooc.com',
-        picUrl: require('assets/img/404.png')
+        picUrl: require('../img/404.png')
       }
     ]
   }).then(res => {

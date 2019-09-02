@@ -1,9 +1,10 @@
-export default {
-  SUCC_CODE: 0,
-  TIMEOUT: 10000,
-  HOME_RECOMMEND_PAGE_SIZE: 20,
-  jsonpOptions: {
-    param: 'callback',
-    timeout: 10000
-  }
+export const SUCC_CODE = 0
+
+export const TIMEOUT = 10000
+
+export const HOME_RECOMMEND_PAGE_SIZE = 10
+
+export const jsonpOptions = {
+  param: 'callback',
+  timeout: TIMEOUT
 }

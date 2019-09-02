@@ -1,9 +1,11 @@
 <template>
   <div class="home">
     <v-header class="header"></v-header>
-    <slider></slider>
-    <nav-list></nav-list>
-    content
+    <div class="content">
+      <slider></slider>
+      <nav-list></nav-list>
+      <recommend></recommend>
+    </div>
   </div>
 </template>
 
@@ -11,18 +13,24 @@
 import VHeader from '@/components/VHeader'
 import Slider from '@/components/Slider'
 import NavList from '@/components/Nav'
+import Recommend from '@/components/Recommend'
+// import { getHomeRecommend } from '@/assets/api/home'
 
 export default {
   name: 'home',
   components: {
     VHeader,
     Slider,
-    NavList
+    NavList,
+    Recommend
   },
   data () {
     return {
 
     }
+  },
+  mounted () {
+
   }
 }
 </script>
@@ -38,6 +46,10 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
+    }
+    .content {
+      height: 100%;
+      overflow: auto;
     }
   }
 </style>

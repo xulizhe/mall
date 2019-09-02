@@ -5,10 +5,11 @@ import store from './store'
 import 'amfe-flexible'
 import './assets/scss/index.scss'
 
-import { Swipe, SwipeItem, Lazyload } from 'vant'
+import { Swipe, SwipeItem, Lazyload, List } from 'vant'
 
 Vue.use(Swipe).use(SwipeItem)
 Vue.use(Lazyload)
+Vue.use(List)
 
 Vue.config.productionTip = false
 

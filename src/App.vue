@@ -40,6 +40,10 @@ export default {
 }
 </script>
 <style lang="scss">
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
   a {
     color: black;
   }
@@ -56,4 +60,7 @@ export default {
     left: 0;
   }
 }
+  .van-list__loading, .van-list__finished-text, .van-list__error-text {
+    margin: 0 auto;
+  }
 </style>
