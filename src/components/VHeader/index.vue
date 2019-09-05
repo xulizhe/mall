@@ -1,10 +1,7 @@
 <template>
     <div class="v-header">
       <i class="iconfont icon-scan"></i>
-      <span class="middle">
-        <i class="iconfont icon-search"></i>
-        <input class="ipt" placeholder="input">
-      </span>
+      <input class="ipt" placeholder="input">
       <i class="iconfont icon-msg"></i>
     </div>
 </template>
@@ -23,11 +20,12 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  .middle {
-    height: 20px;
-    .ipt{
-      height: 100%;
-    }
+  .ipt{
+      height: 28px;
+      box-sizing: border-box;
+      padding: 0 10px 0 10px;
+      margin: 0 10px 0 10px;
+      border-radius: 10px;
   }
 }
 </style>
