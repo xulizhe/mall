@@ -1,7 +1,7 @@
 <template>
     <div class="v-header">
       <i class="iconfont icon-scan"></i>
-      <input class="ipt" placeholder="input">
+      <input class="ipt" placeholder="search">
       <i class="iconfont icon-msg"></i>
     </div>
 </template>
@@ -21,7 +21,9 @@ export default {
   justify-content: center;
   align-items: center;
   .ipt{
+    font-size: 14px;
       height: 28px;
+    width: 280px;
       box-sizing: border-box;
       padding: 0 10px 0 10px;
       margin: 0 10px 0 10px;
