@@ -25,6 +25,11 @@ export default new Router({
       path: '/personal',
       name: 'personal',
       component: () => import('./views/Personal.vue')
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: () => import('./views/Search.vue')
     }
   ]
 })

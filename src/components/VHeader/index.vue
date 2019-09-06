@@ -1,7 +1,12 @@
 <template>
     <div class="v-header">
       <i class="iconfont icon-scan"></i>
-      <input class="ipt" placeholder="search">
+      <div class="middle">
+        <i class="iconfont icon-search"></i>
+        <router-link class="middle-right" to="/search">
+          <input class="ipt" placeholder="search">
+        </router-link>
+      </div>
       <i class="iconfont icon-msg"></i>
     </div>
 </template>
@@ -20,14 +25,29 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  .ipt{
-    font-size: 14px;
-      height: 28px;
+  .middle {
+    height: 28px;
     width: 280px;
-      box-sizing: border-box;
-      padding: 0 10px 0 10px;
-      margin: 0 10px 0 10px;
-      border-radius: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .middle-right {
+      height: 100%;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ipt{
+        font-size: 14px;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px 0 10px;
+      }
+    }
   }
 }
 </style>
