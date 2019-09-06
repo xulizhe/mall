@@ -34,6 +34,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    /*.ipt{*/
+    /*  font-size: 14px;*/
+    /*    height: 100%;*/
+    /*    width: 250px;*/
+    /*  box-sizing: border-box;*/
+    /*  padding: 0 10px 0 10px;*/
+    /*}*/
     .middle-right {
       height: 100%;
       width: 250px;
