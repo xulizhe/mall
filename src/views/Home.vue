@@ -43,7 +43,7 @@ export default {
       const that = this
       const dom = document.getElementsByClassName('content')[0]
       const scrollTop = dom.scrollTop || dom.pageYOffset
-      console.log('scrollTop = = ', scrollTop)
+      // console.log('scrollTop = = ', scrollTop)
       if (scrollTop > 375) {
         that.isBackTop = true
       } else {
@@ -52,7 +52,7 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.handleScroll,true)
+    window.addEventListener('scroll', this.handleScroll, true)
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
@@ -79,8 +79,8 @@ export default {
       overflow: auto;
     }
     .backtop {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       position: absolute;
       bottom: 40px;
       right: 10px;
