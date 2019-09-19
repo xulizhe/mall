@@ -6,6 +6,9 @@
       <nav-list></nav-list>
       <recommend></recommend>
     </div>
+    <div class="backtop" v-show="isBackTop" @click="backTop">
+      <i class="iconfont icon-backtop"></i>
+    </div>
   </div>
 </template>
 
@@ -26,11 +29,30 @@ export default {
   },
   data () {
     return {
-
+      isBackTop: true
+    }
+  },
+  methods:{
+    backTop:function () {
+      this.isBackTop = false
+    },
+    handleScroll:function () {
+      const that = this
+      const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+      console.log('scrollTop = = ',scrollTop)
+      // that.scrollTop = scrollTop
+      // if (that.scrollTop > 0) {
+      //   that.isBackTop = true
+      // } else {
+      //   that.isBackTop = false
+      // }
     }
   },
   mounted () {
-
+    window.addEventListener('scroll', this.handleScroll,true)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -52,6 +74,17 @@ export default {
       -webkit-overflow-scrolling: touch;
       height: 100%;
       overflow: auto;
+    }
+    .backtop {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: 40px;
+      right: 10px;
+      background-color: #999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 </style>
