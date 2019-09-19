@@ -89,6 +89,7 @@ export default {
       justify-content: center;
       align-items: center;
       z-index: 1000;
+      border-radius: 50%;
     }
   }
 </style>
