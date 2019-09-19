@@ -29,23 +29,26 @@ export default {
   },
   data () {
     return {
-      isBackTop: true
+      isBackTop: false
     }
   },
-  methods:{
-    backTop:function () {
+  methods: {
+    backTop: function () {
       this.isBackTop = false
+      const dom = document.getElementsByClassName('content')[0]
+      dom.scrollTop = 0
+      dom.pageYOffset = 0
     },
-    handleScroll:function () {
+    handleScroll: function () {
       const that = this
-      const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
-      console.log('scrollTop = = ',scrollTop)
-      // that.scrollTop = scrollTop
-      // if (that.scrollTop > 0) {
-      //   that.isBackTop = true
-      // } else {
-      //   that.isBackTop = false
-      // }
+      const dom = document.getElementsByClassName('content')[0]
+      const scrollTop = dom.scrollTop || dom.pageYOffset
+      console.log('scrollTop = = ', scrollTop)
+      if (scrollTop > 375) {
+        that.isBackTop = true
+      } else {
+        that.isBackTop = false
+      }
     }
   },
   mounted () {
@@ -85,6 +88,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 1000;
     }
   }
 </style>
