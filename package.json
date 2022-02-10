@@ -27,7 +27,7 @@
     "compression-webpack-plugin": "^3.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "postcss-px2rem": "^0.3.0",
     "sass-loader": "^7.1.0",
     "vconsole": "^3.3.4",
